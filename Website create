@@ -1,0 +1,44 @@
+
+Step 1 :- Go to any cloud provider GCP  Done 
+Step 2 :- Create Virtual machine 
+Vansh10lpa 
+Step 3 :- install docker 
+Step 4 :- Download website  Dev GITHUB 
+Step 5 :- Run the nginx (Webserver ) container with downloaded website
+Step 6 :- Go to IP address:80 and verify
+
+Step 1 :- Go to any cloud provider GCP / AWS / Azure / etc
+Step 2 :- Create Virtual machine 
+Step 3 :- install docker 
+				sudo -i
+				apt-get update && apt install docker.io -y
+				docker -v
+
+Step 4 :- Download website from https://www.tooplate.com/free-templates
+    
+	wget https://www.tooplate.com/zip-templates/2153_fireworks_composer
+	
+		         
+	                  apt install unzip
+					  
+					  unzip 2153_fireworks_composer
+
+-----------------------------------
+
+Step 5 :- Run the nginx container with downloaded website 
+	docker run -ti -d -p 80:80 -v /root/2153_fireworks_composer:/usr/share/nginx/html nginx
+
+Step 6 :- Go to IP address:80 and verify
+
+
+------------------------
+
+
+
+1 more App Run 
+
+docker run -ti -d -p 80:80 -v /root/2153_fireworks_composer:/usr/share/nginx/html nginx
+
+docker run -d --restart unless-stopped --name win11react -p   3000:3000 blueedge/win11react:latest
+
+docker run -it -d -p 8080:8080 jenkins/jenkins:latest
